@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?fileVersion 4.0.0?>
+<cproject storage_type_id="org.eclipse.cdt.core.XmlProjectDescriptionStorage">
+	<storageModule moduleId="org.eclipse.cdt.core.settings">
+		<cconfiguration id="org.eclipse.cdt.msvc.dll.debug.1924633488">
+			<storageModule buildSystemId="org.eclipse.cdt.managedbuilder.core.configurationDataProvider" id="org.eclipse.cdt.msvc.dll.debug.1924633488" moduleId="org.eclipse.cdt.core.settings" name="Debug">
+				<externalSettings>
+					<externalSetting>
+						<entry flags="VALUE_WORKSPACE_PATH" kind="includePath" name="/TestComp" />
+						<entry flags="VALUE_WORKSPACE_PATH" kind="libraryPath" name="/TestComp/Debug" />
+						<entry flags="RESOLVED" kind="libraryFile" name="TestComp" srcPrefixMapping="" srcRootPath="" />
+					</externalSetting>
+				</externalSettings>
+				<extensions>
+					<extension id="org.eclipse.cdt.core.PE" point="org.eclipse.cdt.core.BinaryParser" />
+					<extension id="org.eclipse.cdt.core.VCErrorParser" point="org.eclipse.cdt.core.ErrorParser" />
+				</extensions>
+			</storageModule>
+			<storageModule moduleId="cdtBuildSystem" version="4.0.0">
+				<configuration artifactExtension="dll" artifactName="${ProjName}" buildArtefactType="org.eclipse.cdt.build.core.buildArtefactType.sharedLib" buildProperties="org.eclipse.cdt.build.core.buildArtefactType=org.eclipse.cdt.build.core.buildArtefactType.sharedLib,org.eclipse.cdt.build.core.buildType=org.eclipse.cdt.build.core.buildType.debug" description="" id="org.eclipse.cdt.msvc.dll.debug.1924633488" name="Debug" parent="org.eclipse.cdt.msvc.dll.debug">
+					<folderInfo id="org.eclipse.cdt.msvc.dll.debug.1924633488." name="/" resourcePath="">
+						<toolChain id="org.eclipse.cdt.msvc.toolchain.dll.debug.1350672483" name="Microsoft Visual C++" superClass="org.eclipse.cdt.msvc.toolchain.dll.debug">
+							<targetPlatform id="org.eclipse.cdt.msvc.targetPlatform.dll.debug.1458618940" superClass="org.eclipse.cdt.msvc.targetPlatform.dll.debug" />
+							<builder buildPath="${workspace_loc:/TestComp}/Debug" id="org.eclipse.cdt.msvc.builder.1324019958" keepEnvironmentInBuildfile="false" managedBuildOn="true" name="CDT Internal Builder" superClass="org.eclipse.cdt.msvc.builder" />
+							<tool command="cl /c /D &quot;WIN32&quot;" id="org.eclipse.cdt.msvc.cl.c.dll.debug.682632603" name="C Compiler (cl)" superClass="org.eclipse.cdt.msvc.cl.c.dll.debug">
+								<option id="org.eclipse.cdt.msvc.cl.option.optimization.149146988" name="Optimization" superClass="org.eclipse.cdt.msvc.cl.option.optimization" value="org.eclipse.cdt.msvc.cl.option.optimization.default" valueType="enumerated" />
+								<option id="org.eclipse.cdt.msvc.cl.option.debugFormat.770711712" name="Debug Information Format" superClass="org.eclipse.cdt.msvc.cl.option.debugFormat" value="org.eclipse.cdt.msvc.cl.option.debugFormat.complete" valueType="enumerated" />
+								<option id="org.eclipse.cdt.msvc.cl.option.includes.578561568" superClass="org.eclipse.cdt.msvc.cl.option.includes" valueType="includePath">
+									<listOptionValue builtIn="false" value="&quot;C:\OPRoS_2015\OPRoS_external_package\VisualStudio2015\include&quot;" />
+								</option>
+								<inputType id="org.eclipse.cdt.msvc.cl.inputType.c.1772767356" superClass="org.eclipse.cdt.msvc.cl.inputType.c" />
+								<option id="org.eclipse.cdt.msvc.cl.option.runtime.274807763" superClass="org.eclipse.cdt.msvc.cl.option.runtime" value="org.eclipse.cdt.msvc.cl.option.runtime.mdd" valueType="enumerated" />
+							</tool>
+							<tool command="cl /c /D &quot;WIN32&quot;" id="org.eclipse.cdt.msvc.cl.dll.debug.795547211" name="C++ Compiler (cl)" superClass="org.eclipse.cdt.msvc.cl.dll.debug">
+								<option id="org.eclipse.cdt.msvc.cl.option.optimization.1963705617" name="Optimization" superClass="org.eclipse.cdt.msvc.cl.option.optimization" value="org.eclipse.cdt.msvc.cl.option.optimization.default" valueType="enumerated" />
+								<option id="org.eclipse.cdt.msvc.cl.option.debugFormat.1081023438" name="Debug Information Format" superClass="org.eclipse.cdt.msvc.cl.option.debugFormat" value="org.eclipse.cdt.msvc.cl.option.debugFormat.complete" valueType="enumerated" />
+								<option id="org.eclipse.cdt.msvc.cl.option.includes.241364776" superClass="org.eclipse.cdt.msvc.cl.option.includes" valueType="includePath">
+									<listOptionValue builtIn="false" value="&quot;C:\OPRoS_2015\OPRoS_external_package\VisualStudio2015\include&quot;" />
+								</option>
+								<inputType id="org.eclipse.cdt.msvc.cl.inputType.1454767148" superClass="org.eclipse.cdt.msvc.cl.inputType" />
+								<option id="org.eclipse.cdt.msvc.cl.option.runtime.739170068" superClass="org.eclipse.cdt.msvc.cl.option.runtime" value="org.eclipse.cdt.msvc.cl.option.runtime.mdd" valueType="enumerated" />
+							</tool>
+							<tool id="org.eclipse.cdt.msvc.rc.dll.debug.175194719" name="Resource Compiler (rc)" superClass="org.eclipse.cdt.msvc.rc.dll.debug">
+								<option id="org.eclipse.cdt.msvc.rc.option.includes.1687887521" superClass="org.eclipse.cdt.msvc.rc.option.includes" valueType="includePath">
+									<listOptionValue builtIn="false" value="&quot;C:\OPRoS_2015\OPRoS_external_package\VisualStudio2015\include&quot;" />
+								</option>
+								<inputType id="org.eclipse.cdt.msvc.rc.inputType.1352262932" superClass="org.eclipse.cdt.msvc.rc.inputType" />
+							</tool>
+							<tool id="org.eclipse.cdt.msvc.link.dll.debug.347078171" name="Linker (link)" superClass="org.eclipse.cdt.msvc.link.dll.debug">
+								<option defaultValue="true" id="org.eclipse.cdt.msvc.link.option.dll.645080968" name="Build a DLL" superClass="org.eclipse.cdt.msvc.link.option.dll" valueType="boolean" />
+								<option id="org.eclipse.cdt.msvc.link.option.debug.1782980642" name="Generate Debug Info (/debug)" superClass="org.eclipse.cdt.msvc.link.option.debug" value="true" valueType="boolean" />
+								<option id="org.eclipse.cdt.msvc.link.option.libraries.2108329923" superClass="org.eclipse.cdt.msvc.link.option.libraries" valueType="libs">
+									<listOptionValue builtIn="false" srcPrefixMapping="" srcRootPath="" value="&quot;C:\OPRoS_2015\OPRoS_external_package\VisualStudio2015\Debug\lib\OPRoSCDLD.lib&quot;" />
+								</option>
+								<inputType id="org.eclipse.cdt.msvc.link.inputType.1418906070" superClass="org.eclipse.cdt.msvc.link.inputType" />
+							</tool>
+							<tool id="org.eclipse.cdt.msvc.lib.344508827" name="Library Manager (lib)" superClass="org.eclipse.cdt.msvc.lib" />
+						</toolChain>
+					</folderInfo>
+				</configuration>
+			</storageModule>
+			<storageModule moduleId="org.eclipse.cdt.core.externalSettings" />
+		</cconfiguration>
+	</storageModule>
+	<storageModule moduleId="cdtBuildSystem" version="4.0.0">
+		<project id="TestComp.org.eclipse.cdt.msvc.projectType.dll.2031654791" name="Shared Library" projectType="org.eclipse.cdt.msvc.projectType.dll" />
+	</storageModule>
+	<storageModule moduleId="scannerConfiguration">
+		<autodiscovery enabled="true" problemReportingEnabled="true" selectedProfileId="" />
+		<scannerConfigBuildInfo instanceId="org.eclipse.cdt.msvc.dll.debug.1924633488;org.eclipse.cdt.msvc.dll.debug.1924633488.;org.eclipse.cdt.msvc.cl.dll.debug.795547211;org.eclipse.cdt.msvc.cl.inputType.1454767148">
+			<autodiscovery enabled="true" problemReportingEnabled="true" selectedProfileId="org.eclipse.cdt.msw.build.clScannerInfo" />
+		</scannerConfigBuildInfo>
+		<scannerConfigBuildInfo instanceId="org.eclipse.cdt.msvc.dll.debug.1924633488;org.eclipse.cdt.msvc.dll.debug.1924633488.;org.eclipse.cdt.msvc.cl.c.dll.debug.682632603;org.eclipse.cdt.msvc.cl.inputType.c.1772767356">
+			<autodiscovery enabled="true" problemReportingEnabled="true" selectedProfileId="org.eclipse.cdt.msw.build.clScannerInfo" />
+		</scannerConfigBuildInfo>
+	</storageModule>
+	<storageModule moduleId="org.eclipse.cdt.core.LanguageSettingsProviders" />
+</cproject>
+

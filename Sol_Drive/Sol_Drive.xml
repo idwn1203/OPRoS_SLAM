@@ -13,7 +13,38 @@
 			<homepage />
 		</company>
 	</copyright>
-	<subcomponents />
-	<port_connections />
+	<subcomponents>
+		<subcomponent read_only="0" layout="96,72,250,200">
+			<node_id>robot1.node1</node_id>
+			<name>MobileControllerComp</name>
+			<id>6636d400-5e50-4106-8d05-02d1339cdd36</id>
+			<version>1.0</version>
+			<type>original</type>
+			<reference>MobileControllerComp.xml</reference>
+			<port_layouts>
+				<port_layout port_name="MobileControllerService" port_type="service" port_dir="provided" layout="330,120,180,32" />
+				<port_layout port_name="velocity" port_type="data" port_dir="input" layout="330,168,78,32" />
+			</port_layouts>
+		</subcomponent>
+		<subcomponent read_only="0" layout="492,216,250,200">
+			<node_id>robot1.node1</node_id>
+			<name>TestComp</name>
+			<id>bab02f97-822e-4060-8ff3-e101b9b1ce0d</id>
+			<version>1.0</version>
+			<type>original</type>
+			<reference>TestComp.xml</reference>
+			<port_layouts>
+				<port_layout port_name="MobileTest" port_type="service" port_dir="required" layout="408,303,100,32" />
+			</port_layouts>
+		</subcomponent>
+	</subcomponents>
+	<topics />
+	<port_connections>
+		<port_connection port_type="service">
+			<source component_name="TestComp" port_name="MobileTest" />
+			<target component_name="MobileControllerComp" port_name="MobileControllerService" />
+			<bend_points />
+		</port_connection>
+	</port_connections>
 </package_profile>
 

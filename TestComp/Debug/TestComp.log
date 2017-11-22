@@ -1,0 +1,18 @@
+﻿  TestComp.cpp
+TestComp.obj : warning LNK4075: ignoring '/EDITANDCONTINUE' due to '/SAFESEH' specification
+     Creating library C:\OPRoS_2015\OPRoS_SLAM\TestComp\Debug\TestComp.lib and object C:\OPRoS_2015\OPRoS_SLAM\TestComp\Debug\TestComp.exp
+OPRoSCDLD.lib(Component.obj) : warning LNK4099: PDB 'OPRoSCDL.pdb' was not found with 'OPRoSCDLD.lib(Component.obj)' or at 'C:\OPRoS_2015\OPRoS_SLAM\TestComp\Debug\OPRoSCDL.pdb'; linking object as if no debug info
+OPRoSCDLD.lib(LifecycleInterface.obj) : warning LNK4099: PDB 'OPRoSCDL.pdb' was not found with 'OPRoSCDLD.lib(LifecycleInterface.obj)' or at 'C:\OPRoS_2015\OPRoS_SLAM\TestComp\Debug\OPRoSCDL.pdb'; linking object as if no debug info
+OPRoSCDLD.lib(Method.obj) : warning LNK4099: PDB 'OPRoSCDL.pdb' was not found with 'OPRoSCDLD.lib(Method.obj)' or at 'C:\OPRoS_2015\OPRoS_SLAM\TestComp\Debug\OPRoSCDL.pdb'; linking object as if no debug info
+OPRoSCDLD.lib(OPRoSUtility.obj) : warning LNK4099: PDB 'OPRoSCDL.pdb' was not found with 'OPRoSCDLD.lib(OPRoSUtility.obj)' or at 'C:\OPRoS_2015\OPRoS_SLAM\TestComp\Debug\OPRoSCDL.pdb'; linking object as if no debug info
+OPRoSCDLD.lib(Port.obj) : warning LNK4099: PDB 'OPRoSCDL.pdb' was not found with 'OPRoSCDLD.lib(Port.obj)' or at 'C:\OPRoS_2015\OPRoS_SLAM\TestComp\Debug\OPRoSCDL.pdb'; linking object as if no debug info
+OPRoSCDLD.lib(PortInterface.obj) : warning LNK4099: PDB 'OPRoSCDL.pdb' was not found with 'OPRoSCDLD.lib(PortInterface.obj)' or at 'C:\OPRoS_2015\OPRoS_SLAM\TestComp\Debug\OPRoSCDL.pdb'; linking object as if no debug info
+OPRoSCDLD.lib(PropertyInterface.obj) : warning LNK4099: PDB 'OPRoSCDL.pdb' was not found with 'OPRoSCDLD.lib(PropertyInterface.obj)' or at 'C:\OPRoS_2015\OPRoS_SLAM\TestComp\Debug\OPRoSCDL.pdb'; linking object as if no debug info
+OPRoSCDLD.lib(RequiredServicePort.obj) : warning LNK4099: PDB 'OPRoSCDL.pdb' was not found with 'OPRoSCDLD.lib(RequiredServicePort.obj)' or at 'C:\OPRoS_2015\OPRoS_SLAM\TestComp\Debug\OPRoSCDL.pdb'; linking object as if no debug info
+OPRoSCDLD.lib(ServicePort.obj) : warning LNK4099: PDB 'OPRoSCDL.pdb' was not found with 'OPRoSCDLD.lib(ServicePort.obj)' or at 'C:\OPRoS_2015\OPRoS_SLAM\TestComp\Debug\OPRoSCDL.pdb'; linking object as if no debug info
+OPRoSCDLD.lib(ServicePortInterface.obj) : warning LNK4099: PDB 'OPRoSCDL.pdb' was not found with 'OPRoSCDLD.lib(ServicePortInterface.obj)' or at 'C:\OPRoS_2015\OPRoS_SLAM\TestComp\Debug\OPRoSCDL.pdb'; linking object as if no debug info
+OPRoSCDLD.lib(opros_archive_common.obj) : warning LNK4099: PDB 'OPRoSCDL.pdb' was not found with 'OPRoSCDLD.lib(opros_archive_common.obj)' or at 'C:\OPRoS_2015\OPRoS_SLAM\TestComp\Debug\OPRoSCDL.pdb'; linking object as if no debug info
+OPRoSCDLD.lib(opros_iarchive.obj) : warning LNK4099: PDB 'OPRoSCDL.pdb' was not found with 'OPRoSCDLD.lib(opros_iarchive.obj)' or at 'C:\OPRoS_2015\OPRoS_SLAM\TestComp\Debug\OPRoSCDL.pdb'; linking object as if no debug info
+OPRoSCDLD.lib(opros_oarchive.obj) : warning LNK4099: PDB 'OPRoSCDL.pdb' was not found with 'OPRoSCDLD.lib(opros_oarchive.obj)' or at 'C:\OPRoS_2015\OPRoS_SLAM\TestComp\Debug\OPRoSCDL.pdb'; linking object as if no debug info
+  TestComp.vcxproj -> C:\OPRoS_2015\OPRoS_SLAM\TestComp\Debug\TestComp.dll
+  TestComp.vcxproj -> C:\OPRoS_2015\OPRoS_SLAM\TestComp\Debug\TestComp.pdb (Full PDB)
