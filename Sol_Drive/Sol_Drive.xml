@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<package_profile>
+	<id>95a758a7-39f4-4f2c-bf93-32b8a80ca4ea</id>
+	<name>Sol_Drive</name>
+	<version>1</version>
+	<description />
+	<copyright>
+		<license_policy>OPRoS</license_policy>
+		<company>
+			<name />
+			<phone />
+			<address />
+			<homepage />
+		</company>
+	</copyright>
+	<subcomponents />
+	<port_connections />
+</package_profile>
+
