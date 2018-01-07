@@ -1,0 +1,5 @@
+﻿  LINK : C:\OPRoS_2015\OPRoS_SLAM\Hokuyo_SCIP_V2_0\Debug\Hokuyo_SCIP_V2_0.dll not found or not built by the last incremental link; performing full link
+Hokuyo_SCIP_V2_0.obj : warning LNK4075: ignoring '/EDITANDCONTINUE' due to '/SAFESEH' specification
+     Creating library C:\OPRoS_2015\OPRoS_SLAM\Hokuyo_SCIP_V2_0\Debug\Hokuyo_SCIP_V2_0.lib and object C:\OPRoS_2015\OPRoS_SLAM\Hokuyo_SCIP_V2_0\Debug\Hokuyo_SCIP_V2_0.exp
+  Hokuyo_SCIP_V2_0.vcxproj -> C:\OPRoS_2015\OPRoS_SLAM\Hokuyo_SCIP_V2_0\Debug\Hokuyo_SCIP_V2_0.dll
+  Hokuyo_SCIP_V2_0.vcxproj -> C:\OPRoS_2015\OPRoS_SLAM\Hokuyo_SCIP_V2_0\Debug\Hokuyo_SCIP_V2_0.pdb (Full PDB)

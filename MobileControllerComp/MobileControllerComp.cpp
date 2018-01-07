@@ -59,7 +59,6 @@ MobileControllerComp::MobileControllerComp()
 MobileControllerComp::MobileControllerComp(const std::string &name):Component(name)
 	,velocity(OPROS_FIFO,1)
 {
-	
 	portSetup();
 }
 
@@ -345,6 +344,9 @@ ReturnType MobileControllerComp::SetProperty(OPRoS::Property parameter)
 
 
 void MobileControllerComp::portSetup() {
+//data port setup
+	/*addPort("aS", &aS);*/
+
 //data port setup
 	addPort("velocity", &velocity);
 

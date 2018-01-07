@@ -28,6 +28,10 @@ class MobileControllerComp: public Component
 {
 protected:
 //data
+/*	OutputDataPort< double > aS;*/
+
+protected:
+//data
 	InputDataPort< OPRoS::MobileVelocityData > velocity;
 
 protected:

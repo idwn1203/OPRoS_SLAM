@@ -7,10 +7,8 @@
  */
 
 #include <OPRoSInclude.h>
-
-
-
 #include "MobileControllerServiceRequired.h"
+#include "LaserScannerServiceRequired.h"
 
 
 class TestComp: public Component
@@ -18,7 +16,32 @@ class TestComp: public Component
 protected:
 // service
 // method for required
-	MobileControllerServiceRequired *ptrMobileTest;
+	LaserScannerServiceRequired *ptrLaserTest;
+
+protected:
+// service
+// method for required
+/*	LaserScannerServiceRequired *ptrLaserScannerService;*/
+
+protected:
+// service
+// method for required
+/*	MobileControllerServiceRequired *ptrMobileTest;*/
+
+protected:
+// service
+// method for required
+/*	LaserScannerServiceRequired *ptrLaserTest;*/
+
+protected:
+// service
+// method for required
+/*	LaserScannerServiceRequired *ptrLaserTest;*/
+
+protected:
+// service
+// method for required
+/*	MobileControllerServiceRequired *ptrMobileTest;*/
 
 protected:
 // data

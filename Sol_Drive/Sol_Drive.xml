@@ -14,35 +14,47 @@
 		</company>
 	</copyright>
 	<subcomponents>
-		<subcomponent read_only="0" layout="96,72,250,200">
+		<subcomponent read_only="0" layout="12,96,250,200">
 			<node_id>robot1.node1</node_id>
+			<name>LaserScannerComp</name>
+			<id>5fc7052f-6271-441f-abe3-947a0355df45</id>
+			<version>1.0</version>
+			<type>original</type>
+			<reference>LaserScannerComp.xml</reference>
+			<port_layouts>
+				<port_layout port_name="LaserScannerService" port_type="service" port_dir="provided" layout="246,144,169,32" />
+				<port_layout port_name="laserScannerData" port_type="data" port_dir="output" layout="246,264,146,32" />
+			</port_layouts>
+		</subcomponent>
+		<subcomponent read_only="0" layout="432,324,250,200">
+			<node_id>robot1.node1</node_id>
+			<name>LaserScannerTestComp</name>
+			<id>048909a7-2507-4f37-90cc-0d428f4cb704</id>
+			<version>1.0</version>
+			<type>original</type>
+			<reference>LaserScannerTestComp.xml</reference>
+			<port_layouts>
+				<port_layout port_name="LaserScannerService" port_type="service" port_dir="required" layout="279,336,169,32" />
+			</port_layouts>
+		</subcomponent>
+		<subcomponent read_only="0" layout="432,36,250,200">
+			<node_id />
 			<name>MobileControllerComp</name>
 			<id>6636d400-5e50-4106-8d05-02d1339cdd36</id>
 			<version>1.0</version>
 			<type>original</type>
 			<reference>MobileControllerComp.xml</reference>
 			<port_layouts>
-				<port_layout port_name="MobileControllerService" port_type="service" port_dir="provided" layout="330,120,180,32" />
-				<port_layout port_name="velocity" port_type="data" port_dir="input" layout="330,168,78,32" />
-			</port_layouts>
-		</subcomponent>
-		<subcomponent read_only="0" layout="492,216,250,200">
-			<node_id>robot1.node1</node_id>
-			<name>TestComp</name>
-			<id>bab02f97-822e-4060-8ff3-e101b9b1ce0d</id>
-			<version>1.0</version>
-			<type>original</type>
-			<reference>TestComp.xml</reference>
-			<port_layouts>
-				<port_layout port_name="MobileTest" port_type="service" port_dir="required" layout="408,303,100,32" />
+				<port_layout port_name="MobileControllerService" port_type="service" port_dir="provided" layout="268,85,180,32" />
+				<port_layout port_name="velocity" port_type="data" port_dir="input" layout="666,96,78,32" />
 			</port_layouts>
 		</subcomponent>
 	</subcomponents>
 	<topics />
 	<port_connections>
 		<port_connection port_type="service">
-			<source component_name="TestComp" port_name="MobileTest" />
-			<target component_name="MobileControllerComp" port_name="MobileControllerService" />
+			<source component_name="LaserScannerTestComp" port_name="LaserScannerService" />
+			<target component_name="LaserScannerComp" port_name="LaserScannerService" />
 			<bend_points />
 		</port_connection>
 	</port_connections>

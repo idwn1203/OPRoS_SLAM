@@ -1,0 +1,22 @@
+﻿  LaserScannerComp.cpp
+LaserScannerComp.obj : warning LNK4075: ignoring '/EDITANDCONTINUE' due to '/SAFESEH' specification
+     Creating library C:\OPRoS_2015\OPRoS_SLAM\LaserScannerComp\Debug\LaserScannerComp.lib and object C:\OPRoS_2015\OPRoS_SLAM\LaserScannerComp\Debug\LaserScannerComp.exp
+OPRoSCDLD.lib(Component.obj) : warning LNK4099: PDB 'OPRoSCDL.pdb' was not found with 'OPRoSCDLD.lib(Component.obj)' or at 'C:\OPRoS_2015\OPRoS_SLAM\LaserScannerComp\Debug\OPRoSCDL.pdb'; linking object as if no debug info
+OPRoSCDLD.lib(DataPort.obj) : warning LNK4099: PDB 'OPRoSCDL.pdb' was not found with 'OPRoSCDLD.lib(DataPort.obj)' or at 'C:\OPRoS_2015\OPRoS_SLAM\LaserScannerComp\Debug\OPRoSCDL.pdb'; linking object as if no debug info
+OPRoSCDLD.lib(LifecycleInterface.obj) : warning LNK4099: PDB 'OPRoSCDL.pdb' was not found with 'OPRoSCDLD.lib(LifecycleInterface.obj)' or at 'C:\OPRoS_2015\OPRoS_SLAM\LaserScannerComp\Debug\OPRoSCDL.pdb'; linking object as if no debug info
+OPRoSCDLD.lib(Method.obj) : warning LNK4099: PDB 'OPRoSCDL.pdb' was not found with 'OPRoSCDLD.lib(Method.obj)' or at 'C:\OPRoS_2015\OPRoS_SLAM\LaserScannerComp\Debug\OPRoSCDL.pdb'; linking object as if no debug info
+OPRoSCDLD.lib(OPRoSUtility.obj) : warning LNK4099: PDB 'OPRoSCDL.pdb' was not found with 'OPRoSCDLD.lib(OPRoSUtility.obj)' or at 'C:\OPRoS_2015\OPRoS_SLAM\LaserScannerComp\Debug\OPRoSCDL.pdb'; linking object as if no debug info
+OPRoSCDLD.lib(OSGuard.obj) : warning LNK4099: PDB 'OPRoSCDL.pdb' was not found with 'OPRoSCDLD.lib(OSGuard.obj)' or at 'C:\OPRoS_2015\OPRoS_SLAM\LaserScannerComp\Debug\OPRoSCDL.pdb'; linking object as if no debug info
+OPRoSCDLD.lib(OSMutex_Port.obj) : warning LNK4099: PDB 'OPRoSCDL.pdb' was not found with 'OPRoSCDLD.lib(OSMutex_Port.obj)' or at 'C:\OPRoS_2015\OPRoS_SLAM\LaserScannerComp\Debug\OPRoSCDL.pdb'; linking object as if no debug info
+OPRoSCDLD.lib(OutputDataPortInterface.obj) : warning LNK4099: PDB 'OPRoSCDL.pdb' was not found with 'OPRoSCDLD.lib(OutputDataPortInterface.obj)' or at 'C:\OPRoS_2015\OPRoS_SLAM\LaserScannerComp\Debug\OPRoSCDL.pdb'; linking object as if no debug info
+OPRoSCDLD.lib(Port.obj) : warning LNK4099: PDB 'OPRoSCDL.pdb' was not found with 'OPRoSCDLD.lib(Port.obj)' or at 'C:\OPRoS_2015\OPRoS_SLAM\LaserScannerComp\Debug\OPRoSCDL.pdb'; linking object as if no debug info
+OPRoSCDLD.lib(PortInterface.obj) : warning LNK4099: PDB 'OPRoSCDL.pdb' was not found with 'OPRoSCDLD.lib(PortInterface.obj)' or at 'C:\OPRoS_2015\OPRoS_SLAM\LaserScannerComp\Debug\OPRoSCDL.pdb'; linking object as if no debug info
+OPRoSCDLD.lib(PropertyInterface.obj) : warning LNK4099: PDB 'OPRoSCDL.pdb' was not found with 'OPRoSCDLD.lib(PropertyInterface.obj)' or at 'C:\OPRoS_2015\OPRoS_SLAM\LaserScannerComp\Debug\OPRoSCDL.pdb'; linking object as if no debug info
+OPRoSCDLD.lib(ProvidedServicePort.obj) : warning LNK4099: PDB 'OPRoSCDL.pdb' was not found with 'OPRoSCDLD.lib(ProvidedServicePort.obj)' or at 'C:\OPRoS_2015\OPRoS_SLAM\LaserScannerComp\Debug\OPRoSCDL.pdb'; linking object as if no debug info
+OPRoSCDLD.lib(ServicePort.obj) : warning LNK4099: PDB 'OPRoSCDL.pdb' was not found with 'OPRoSCDLD.lib(ServicePort.obj)' or at 'C:\OPRoS_2015\OPRoS_SLAM\LaserScannerComp\Debug\OPRoSCDL.pdb'; linking object as if no debug info
+OPRoSCDLD.lib(ServicePortInterface.obj) : warning LNK4099: PDB 'OPRoSCDL.pdb' was not found with 'OPRoSCDLD.lib(ServicePortInterface.obj)' or at 'C:\OPRoS_2015\OPRoS_SLAM\LaserScannerComp\Debug\OPRoSCDL.pdb'; linking object as if no debug info
+OPRoSCDLD.lib(opros_archive_common.obj) : warning LNK4099: PDB 'OPRoSCDL.pdb' was not found with 'OPRoSCDLD.lib(opros_archive_common.obj)' or at 'C:\OPRoS_2015\OPRoS_SLAM\LaserScannerComp\Debug\OPRoSCDL.pdb'; linking object as if no debug info
+OPRoSCDLD.lib(opros_iarchive.obj) : warning LNK4099: PDB 'OPRoSCDL.pdb' was not found with 'OPRoSCDLD.lib(opros_iarchive.obj)' or at 'C:\OPRoS_2015\OPRoS_SLAM\LaserScannerComp\Debug\OPRoSCDL.pdb'; linking object as if no debug info
+OPRoSCDLD.lib(opros_oarchive.obj) : warning LNK4099: PDB 'OPRoSCDL.pdb' was not found with 'OPRoSCDLD.lib(opros_oarchive.obj)' or at 'C:\OPRoS_2015\OPRoS_SLAM\LaserScannerComp\Debug\OPRoSCDL.pdb'; linking object as if no debug info
+  LaserScannerComp.vcxproj -> C:\OPRoS_2015\OPRoS_SLAM\LaserScannerComp\Debug\LaserScannerComp.dll
+  LaserScannerComp.vcxproj -> C:\OPRoS_2015\OPRoS_SLAM\LaserScannerComp\Debug\LaserScannerComp.pdb (Full PDB)

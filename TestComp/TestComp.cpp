@@ -1,28 +1,36 @@
 
 /*
  *  Generated sources by OPRoS Component Generator (OCG V2.1 [Symbol,Topic])
- *  
+ *
  */
 
 #include <OPRoSInclude.h>
 
 #include "TestComp.h"
 
-//
-// constructor declaration
-//
+ //
+ // constructor declaration
+ //
 TestComp::TestComp()
 {
-	ptrMobileTest = NULL;
+	ptrLaserTest = NULL;
+
+/*	ptrLaserScannerService = NULL;*/
+
+
 	portSetup();
 }
 
 //
 // constructor declaration (with name)
 //
-TestComp::TestComp(const std::string &name):Component(name)
+TestComp::TestComp(const std::string &name) :Component(name)
 {
-	ptrMobileTest = NULL;
+	ptrLaserTest = NULL;
+
+/*	ptrLaserScannerService = NULL;*/
+
+
 	portSetup();
 }
 
@@ -34,15 +42,14 @@ TestComp::~TestComp() {
 }
 
 void TestComp::portSetup() {
-	ptrMobileTest=new MobileControllerServiceRequired();
-	addPort("MobileTest",ptrMobileTest);
+	ptrLaserTest=new LaserScannerServiceRequired();
+	addPort("LaserTest",ptrLaserTest);
 
-
+/*	ptrLaserScannerService=new LaserScannerServiceRequired();*/
+/*	addPort("LaserScannerService",ptrLaserScannerService);*/
 
 
 	// export variable setup
-
-
 }
 
 // Call back Declaration
@@ -54,12 +61,14 @@ ReturnType TestComp::onInitialize()
 
 ReturnType TestComp::onStart()
 {
+
 	// user code here
 	return OPROS_SUCCESS;
 }
-	
+
 ReturnType TestComp::onStop()
 {
+
 	// user code here
 	return OPROS_SUCCESS;
 }
@@ -96,15 +105,33 @@ ReturnType TestComp::onEvent(Event *evt)
 
 ReturnType TestComp::onExecute()
 {
+	
+
 	// user code here
-	OPRoS::MobileVelocityData value;
-		value.x = 10;
-		ptrMobileTest->SetVelocity(value);
 
 
+
+	//Scanner Test Start
+	std::vector<OPRoS::Float64Array> vval;
+	OPRoS::Float64Array fval;
+
+	vval = ptrLaserTestService->GetSensorValue();
+
+	std::cout << "TEST04" << std::endl;
+	std::cout << "LASERSCANNERTESTCOMP ONEXECUTE TEST02" << std::endl;
+	std::cout << "TEST05" << std::endl;
+	std::cout<<"val="<<vval.size()<<std::endl;
+	std::cout << "TEST06" << std::endl;
+
+	fval = vval[0].data;
+	std::cout << "Test 01 vval="<< fval.data.size() << std::endl;
+	std::vector<int>::size_type sz = fval.data.size();
+	for (unsigned i = 0; i < sz; i++)
+		std::cout << ' ' << fval.data[i];
+	std::cout << '\n';
 	return OPROS_SUCCESS;
 }
-	
+
 ReturnType TestComp::onUpdated()
 {
 	// user code here
@@ -128,8 +155,8 @@ ReturnType TestComp::onPeriodChanged()
 
 extern "C"
 {
-__declspec(dllexport) Component *getComponent();
-__declspec(dllexport) void releaseComponent(Component *pcom);
+	__declspec(dllexport) Component *getComponent();
+	__declspec(dllexport) void releaseComponent(Component *pcom);
 }
 
 Component *getComponent()
