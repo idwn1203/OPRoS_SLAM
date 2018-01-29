@@ -1,0 +1,11 @@
+﻿  SLAMComp.cpp
+c:\opros_2015\opros_slam\slamcomp\slamcomp.cpp(275): warning C4244: 'argument': conversion from 'time_t' to 'unsigned int', possible loss of data
+c:\opros_2015\opros_slam\slamcomp\slamcomp.cpp(754): warning C4244: 'initializing': conversion from 'double' to 'int', possible loss of data
+c:\opros_2015\opros_slam\slamcomp\slamcomp.cpp(782): warning C4244: 'initializing': conversion from 'double' to 'int', possible loss of data
+c:\opros_2015\opros_slam\slamcomp\slamcomp.cpp(783): warning C4244: 'initializing': conversion from 'double' to 'int', possible loss of data
+c:\opros_2015\opros_slam\slamcomp\slamcomp.cpp(784): warning C4244: 'initializing': conversion from 'double' to 'int', possible loss of data
+c:\opros_2015\opros_slam\slamcomp\slamcomp.cpp(785): warning C4244: 'initializing': conversion from 'double' to 'int', possible loss of data
+c:\opros_2015\opros_slam\slamcomp\slamcomp.cpp(810): warning C4244: 'initializing': conversion from 'double' to 'int', possible loss of data
+c:\opros_2015\opros_slam\slamcomp\slamcomp.cpp(843): warning C4244: 'initializing': conversion from 'double' to 'int', possible loss of data
+  SLAMComp.vcxproj -> C:\OPRoS_2015\OPRoS_SLAM\SLAMComp\Debug\SLAMComp.dll
+  SLAMComp.vcxproj -> C:\OPRoS_2015\OPRoS_SLAM\SLAMComp\Debug\SLAMComp.pdb (Full PDB)

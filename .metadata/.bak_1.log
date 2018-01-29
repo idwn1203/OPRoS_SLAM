@@ -1,4 +1,4 @@
-!SESSION 2017-11-23 01:53:48.670 -----------------------------------------------
+!SESSION 2018-01-07 13:47:27.690 -----------------------------------------------
 eclipse.buildId=unknown
 java.version=1.8.0_144
 java.vendor=Oracle Corporation
@@ -6,37 +6,43 @@ BootLoader constants: OS=win32, ARCH=x86, WS=win32, NL=ko_KR
 Command-line arguments:  -os win32 -ws win32 -arch x86
 
 This is a continuation of log file C:\OPRoS_2015\OPRoS_SLAM\.metadata\.bak_0.log
-Created Time: 2017-11-23 01:58:40.068
+Created Time: 2018-01-07 13:53:43.357
 
-!ENTRY org.eclipse.cdt.core 1 0 2017-11-23 01:58:40.068
-!MESSAGE Indexed 'ControllComp' (1 sources, 138 headers) in 7.67 sec: 32,856 declarations; 64,341 references; 18 unresolved inclusions; 113 syntax errors; 2,447 unresolved names (2.5%)
-
-!ENTRY org.eclipse.cdt.ui 2 0 2017-11-23 02:00:20.000
+!ENTRY org.eclipse.cdt.ui 2 0 2018-01-07 13:53:43.357
 !MESSAGE Default project not found in New C/C++ Project Wizard
 
-!ENTRY org.eclipse.cdt.core 4 0 2017-11-23 02:00:35.004
-!MESSAGE Error while parsing /C:/OPRoS_2015/OPRoS_SLAM/MobileControllerComp/MobileControllerComp.cpp.
+!ENTRY org.eclipse.cdt.core 1 0 2018-01-07 13:53:51.328
+!MESSAGE Indexed 'SLAMComp' (1 sources, 1 headers) in 0.038 sec: 29 declarations; 24 references; 2 unresolved inclusions; 0 syntax errors; 57 unresolved names (52%)
+
+!ENTRY org.eclipse.cdt.core 4 0 2018-01-07 13:54:39.453
+!MESSAGE Error while parsing /C:/OPRoS_2015/OPRoS_SLAM/SLAMComp/GridBasedGlobalMap.cpp.
 !STACK 1
-org.eclipse.core.runtime.CoreException: Error while parsing /C:/OPRoS_2015/OPRoS_SLAM/MobileControllerComp/MobileControllerComp.cpp.
+org.eclipse.core.runtime.CoreException: Error while parsing /C:/OPRoS_2015/OPRoS_SLAM/SLAMComp/GridBasedGlobalMap.cpp.
 	at org.eclipse.cdt.internal.core.pdom.PDOMWriter.addSymbols(PDOMWriter.java:292)
 	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.writeToIndex(AbstractIndexerTask.java:1279)
 	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.parseFile(AbstractIndexerTask.java:1094)
 	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.parseLinkage(AbstractIndexerTask.java:898)
 	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.runTask(AbstractIndexerTask.java:554)
 	at org.eclipse.cdt.internal.core.pdom.indexer.PDOMIndexerTask.run(PDOMIndexerTask.java:161)
-	at org.eclipse.cdt.internal.core.pdom.indexer.PDOMRebuildTask.run(PDOMRebuildTask.java:90)
 	at org.eclipse.cdt.internal.core.pdom.PDOMIndexerJob.run(PDOMIndexerJob.java:149)
 	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
 Contains: Error while parsing /C:/Program Files/Microsoft Visual Studio 14.0/VC/include/xtr1common.
 java.lang.StackOverflowError
-	at org.eclipse.core.runtime.PlatformObject.getAdapter(PlatformObject.java:68)
-	at org.eclipse.cdt.internal.core.pdom.dom.PDOMLinkage.attemptFastAdaptBinding(PDOMLinkage.java:206)
-	at org.eclipse.cdt.internal.core.pdom.dom.cpp.PDOMCPPLinkage.addBinding(PDOMCPPLinkage.java:407)
+	at org.eclipse.cdt.internal.core.pdom.db.Database.getChunk(Database.java:284)
+	at org.eclipse.cdt.internal.core.pdom.db.ShortString.getChars(ShortString.java:66)
+	at org.eclipse.cdt.internal.core.pdom.db.ShortString.compareCompatibleWithIgnoreCase(ShortString.java:178)
+	at org.eclipse.cdt.internal.core.pdom.dom.FindBinding$DefaultFindBindingVisitor.compare(FindBinding.java:80)
+	at org.eclipse.cdt.internal.core.pdom.db.BTree.accept(BTree.java:561)
+	at org.eclipse.cdt.internal.core.pdom.db.BTree.accept(BTree.java:531)
+	at org.eclipse.cdt.internal.core.pdom.dom.FindBinding.findBinding(FindBinding.java:173)
+	at org.eclipse.cdt.internal.core.pdom.dom.cpp.CPPFindBinding.findBinding(CPPFindBinding.java:129)
+	at org.eclipse.cdt.internal.core.pdom.dom.cpp.PDOMCPPLinkage.doAdaptBinding(PDOMCPPLinkage.java:898)
+	at org.eclipse.cdt.internal.core.pdom.dom.cpp.PDOMCPPLinkage.adaptBinding(PDOMCPPLinkage.java:854)
+	at org.eclipse.cdt.internal.core.pdom.dom.cpp.PDOMCPPLinkage.addBinding(PDOMCPPLinkage.java:419)
 	at org.eclipse.cdt.internal.core.pdom.dom.cpp.PDOMCPPLinkage.addTypeBinding(PDOMCPPLinkage.java:1245)
 	at org.eclipse.cdt.internal.core.pdom.dom.TypeMarshalBuffer.marshalBinding(TypeMarshalBuffer.java:85)
-	at org.eclipse.cdt.internal.core.dom.parser.cpp.CPPDeferredClassInstance.marshal(CPPDeferredClassInstance.java:232)
-	at org.eclipse.cdt.internal.core.pdom.dom.TypeMarshalBuffer.marshalBinding(TypeMarshalBuffer.java:81)
-	at org.eclipse.cdt.internal.core.dom.parser.cpp.semantics.EvalID.marshal(EvalID.java:183)
+	at org.eclipse.cdt.internal.core.dom.parser.cpp.semantics.CPPDependentEvaluation.marshalTemplateDefinition(CPPDependentEvaluation.java:96)
+	at org.eclipse.cdt.internal.core.dom.parser.cpp.semantics.EvalID.marshal(EvalID.java:190)
 	at org.eclipse.cdt.internal.core.dom.parser.Value.marshal(Value.java:185)
 	at org.eclipse.cdt.internal.core.pdom.dom.TypeMarshalBuffer.marshalValue(TypeMarshalBuffer.java:174)
 	at org.eclipse.cdt.internal.core.pdom.dom.PDOMLinkage.storeValue(PDOMLinkage.java:654)
@@ -1046,13 +1052,6 @@ java.lang.StackOverflowError
 	at org.eclipse.cdt.internal.core.dom.parser.cpp.semantics.CPPDependentEvaluation.marshalTemplateDefinition(CPPDependentEvaluation.java:96)
 	at org.eclipse.cdt.internal.core.dom.parser.cpp.semantics.EvalID.marshal(EvalID.java:190)
 	at org.eclipse.cdt.internal.core.dom.parser.Value.marshal(Value.java:185)
-	at org.eclipse.cdt.internal.core.pdom.dom.TypeMarshalBuffer.marshalValue(TypeMarshalBuffer.java:174)
-	at org.eclipse.cdt.internal.core.pdom.dom.PDOMLinkage.storeValue(PDOMLinkage.java:654)
-	at org.eclipse.cdt.internal.core.pdom.dom.PDOMLinkage.storeValue(PDOMLinkage.java:648)
-	at org.eclipse.cdt.internal.core.pdom.dom.cpp.PDOMCPPVariable.setValue(PDOMCPPVariable.java:54)
-	at org.eclipse.cdt.internal.core.pdom.dom.cpp.PDOMCPPVariable.<init>(PDOMCPPVariable.java:49)
-	at org.eclipse.cdt.internal.core.pdom.dom.cpp.PDOMCPPLinkage.createBinding(PDOMCPPLinkage.java:526)
-	at org.eclipse.cdt.internal.core.pdom.dom.cpp.PDOMCPPLinkage.addBinding(PDOMCPPLinkage.java:424)
 Contains: Error while parsing /C:/Program Files/Microsoft Visual Studio 14.0/VC/include/xstddef.
 java.lang.StackOverflowError
 	at org.eclipse.cdt.internal.core.pdom.db.Database.getChunk(Database.java:284)
@@ -1060,8 +1059,6 @@ java.lang.StackOverflowError
 	at org.eclipse.cdt.internal.core.pdom.db.ShortString.compareCompatibleWithIgnoreCase(ShortString.java:178)
 	at org.eclipse.cdt.internal.core.pdom.dom.FindBinding$DefaultFindBindingVisitor.compare(FindBinding.java:80)
 	at org.eclipse.cdt.internal.core.pdom.db.BTree.accept(BTree.java:561)
-	at org.eclipse.cdt.internal.core.pdom.db.BTree.accept(BTree.java:580)
-	at org.eclipse.cdt.internal.core.pdom.db.BTree.accept(BTree.java:580)
 	at org.eclipse.cdt.internal.core.pdom.db.BTree.accept(BTree.java:531)
 	at org.eclipse.cdt.internal.core.pdom.dom.FindBinding.findBinding(FindBinding.java:173)
 	at org.eclipse.cdt.internal.core.pdom.dom.cpp.CPPFindBinding.findBinding(CPPFindBinding.java:129)
@@ -2079,6 +2076,8 @@ java.lang.StackOverflowError
 	at org.eclipse.cdt.internal.core.pdom.dom.cpp.PDOMCPPLinkage.addTypeBinding(PDOMCPPLinkage.java:1245)
 	at org.eclipse.cdt.internal.core.pdom.dom.TypeMarshalBuffer.marshalBinding(TypeMarshalBuffer.java:85)
 	at org.eclipse.cdt.internal.core.dom.parser.cpp.semantics.CPPDependentEvaluation.marshalTemplateDefinition(CPPDependentEvaluation.java:96)
+	at org.eclipse.cdt.internal.core.dom.parser.cpp.semantics.EvalID.marshal(EvalID.java:190)
+	at org.eclipse.cdt.internal.core.dom.parser.Value.marshal(Value.java:185)
 Contains: Error while parsing /C:/Program Files/Microsoft Visual Studio 14.0/VC/include/type_traits.
 java.lang.StackOverflowError
 	at org.eclipse.cdt.internal.core.pdom.db.Database.getChunk(Database.java:284)
@@ -2086,8 +2085,6 @@ java.lang.StackOverflowError
 	at org.eclipse.cdt.internal.core.pdom.db.ShortString.compareCompatibleWithIgnoreCase(ShortString.java:178)
 	at org.eclipse.cdt.internal.core.pdom.dom.FindBinding$DefaultFindBindingVisitor.compare(FindBinding.java:80)
 	at org.eclipse.cdt.internal.core.pdom.db.BTree.accept(BTree.java:561)
-	at org.eclipse.cdt.internal.core.pdom.db.BTree.accept(BTree.java:580)
-	at org.eclipse.cdt.internal.core.pdom.db.BTree.accept(BTree.java:580)
 	at org.eclipse.cdt.internal.core.pdom.db.BTree.accept(BTree.java:531)
 	at org.eclipse.cdt.internal.core.pdom.dom.FindBinding.findBinding(FindBinding.java:173)
 	at org.eclipse.cdt.internal.core.pdom.dom.cpp.CPPFindBinding.findBinding(CPPFindBinding.java:129)
@@ -3105,6 +3102,8 @@ java.lang.StackOverflowError
 	at org.eclipse.cdt.internal.core.pdom.dom.cpp.PDOMCPPLinkage.addTypeBinding(PDOMCPPLinkage.java:1245)
 	at org.eclipse.cdt.internal.core.pdom.dom.TypeMarshalBuffer.marshalBinding(TypeMarshalBuffer.java:85)
 	at org.eclipse.cdt.internal.core.dom.parser.cpp.semantics.CPPDependentEvaluation.marshalTemplateDefinition(CPPDependentEvaluation.java:96)
+	at org.eclipse.cdt.internal.core.dom.parser.cpp.semantics.EvalID.marshal(EvalID.java:190)
+	at org.eclipse.cdt.internal.core.dom.parser.Value.marshal(Value.java:185)
 Contains: Error while parsing /C:/Program Files/Microsoft Visual Studio 14.0/VC/include/utility.
 java.lang.StackOverflowError
 	at org.eclipse.cdt.internal.core.pdom.db.Database.getChunk(Database.java:284)
@@ -3112,8 +3111,6 @@ java.lang.StackOverflowError
 	at org.eclipse.cdt.internal.core.pdom.db.ShortString.compareCompatibleWithIgnoreCase(ShortString.java:178)
 	at org.eclipse.cdt.internal.core.pdom.dom.FindBinding$DefaultFindBindingVisitor.compare(FindBinding.java:80)
 	at org.eclipse.cdt.internal.core.pdom.db.BTree.accept(BTree.java:561)
-	at org.eclipse.cdt.internal.core.pdom.db.BTree.accept(BTree.java:580)
-	at org.eclipse.cdt.internal.core.pdom.db.BTree.accept(BTree.java:580)
 	at org.eclipse.cdt.internal.core.pdom.db.BTree.accept(BTree.java:531)
 	at org.eclipse.cdt.internal.core.pdom.dom.FindBinding.findBinding(FindBinding.java:173)
 	at org.eclipse.cdt.internal.core.pdom.dom.cpp.CPPFindBinding.findBinding(CPPFindBinding.java:129)
@@ -4131,17 +4128,14 @@ java.lang.StackOverflowError
 	at org.eclipse.cdt.internal.core.pdom.dom.cpp.PDOMCPPLinkage.addTypeBinding(PDOMCPPLinkage.java:1245)
 	at org.eclipse.cdt.internal.core.pdom.dom.TypeMarshalBuffer.marshalBinding(TypeMarshalBuffer.java:85)
 	at org.eclipse.cdt.internal.core.dom.parser.cpp.semantics.CPPDependentEvaluation.marshalTemplateDefinition(CPPDependentEvaluation.java:96)
+	at org.eclipse.cdt.internal.core.dom.parser.cpp.semantics.EvalID.marshal(EvalID.java:190)
+	at org.eclipse.cdt.internal.core.dom.parser.Value.marshal(Value.java:185)
 Contains: Error while parsing /C:/Program Files/Microsoft Visual Studio 14.0/VC/include/xutility.
 java.lang.StackOverflowError
-	at org.eclipse.cdt.internal.core.pdom.db.Database.getChunk(Database.java:284)
-	at org.eclipse.cdt.internal.core.pdom.db.Database.getInt(Database.java:478)
-	at org.eclipse.cdt.internal.core.pdom.db.Database.getString(Database.java:579)
-	at org.eclipse.cdt.internal.core.pdom.dom.PDOMNamedNode.getDBName(PDOMNamedNode.java:72)
-	at org.eclipse.cdt.internal.core.pdom.dom.FindBinding$DefaultFindBindingVisitor.compare(FindBinding.java:79)
-	at org.eclipse.cdt.internal.core.pdom.db.BTree.accept(BTree.java:561)
-	at org.eclipse.cdt.internal.core.pdom.db.BTree.accept(BTree.java:531)
-	at org.eclipse.cdt.internal.core.pdom.dom.FindBinding.findBinding(FindBinding.java:173)
-	at org.eclipse.cdt.internal.core.pdom.dom.cpp.CPPFindBinding.findBinding(CPPFindBinding.java:129)
+	at java.lang.StringBuilder.toString(Unknown Source)
+	at org.eclipse.cdt.internal.core.index.IndexCPPSignatureUtil.getSignature(IndexCPPSignatureUtil.java:91)
+	at org.eclipse.cdt.internal.core.index.IndexCPPSignatureUtil.getSignatureHash(IndexCPPSignatureUtil.java:159)
+	at org.eclipse.cdt.internal.core.pdom.dom.cpp.CPPFindBinding.findBinding(CPPFindBinding.java:122)
 	at org.eclipse.cdt.internal.core.pdom.dom.cpp.PDOMCPPLinkage.doAdaptBinding(PDOMCPPLinkage.java:887)
 	at org.eclipse.cdt.internal.core.pdom.dom.cpp.PDOMCPPLinkage.adaptBinding(PDOMCPPLinkage.java:854)
 	at org.eclipse.cdt.internal.core.pdom.dom.cpp.PDOMCPPLinkage.addBinding(PDOMCPPLinkage.java:419)
@@ -5157,6 +5151,11 @@ java.lang.StackOverflowError
 	at org.eclipse.cdt.internal.core.pdom.dom.cpp.PDOMCPPLinkage.createBinding(PDOMCPPLinkage.java:526)
 	at org.eclipse.cdt.internal.core.pdom.dom.cpp.PDOMCPPLinkage.addBinding(PDOMCPPLinkage.java:424)
 	at org.eclipse.cdt.internal.core.pdom.dom.cpp.PDOMCPPLinkage.addTypeBinding(PDOMCPPLinkage.java:1245)
+	at org.eclipse.cdt.internal.core.pdom.dom.TypeMarshalBuffer.marshalBinding(TypeMarshalBuffer.java:85)
+	at org.eclipse.cdt.internal.core.dom.parser.cpp.semantics.CPPDependentEvaluation.marshalTemplateDefinition(CPPDependentEvaluation.java:96)
+	at org.eclipse.cdt.internal.core.dom.parser.cpp.semantics.EvalID.marshal(EvalID.java:190)
+	at org.eclipse.cdt.internal.core.dom.parser.Value.marshal(Value.java:185)
+	at org.eclipse.cdt.internal.core.pdom.dom.TypeMarshalBuffer.marshalValue(TypeMarshalBuffer.java:174)
 Contains: Error while parsing /C:/Program Files/Microsoft Visual Studio 14.0/VC/include/system_error.
 java.lang.StackOverflowError
 	at org.eclipse.cdt.internal.core.pdom.db.Database.getChunk(Database.java:284)
@@ -5164,8 +5163,6 @@ java.lang.StackOverflowError
 	at org.eclipse.cdt.internal.core.pdom.db.ShortString.compareCompatibleWithIgnoreCase(ShortString.java:178)
 	at org.eclipse.cdt.internal.core.pdom.dom.FindBinding$DefaultFindBindingVisitor.compare(FindBinding.java:80)
 	at org.eclipse.cdt.internal.core.pdom.db.BTree.accept(BTree.java:561)
-	at org.eclipse.cdt.internal.core.pdom.db.BTree.accept(BTree.java:580)
-	at org.eclipse.cdt.internal.core.pdom.db.BTree.accept(BTree.java:580)
 	at org.eclipse.cdt.internal.core.pdom.db.BTree.accept(BTree.java:531)
 	at org.eclipse.cdt.internal.core.pdom.dom.FindBinding.findBinding(FindBinding.java:173)
 	at org.eclipse.cdt.internal.core.pdom.dom.cpp.CPPFindBinding.findBinding(CPPFindBinding.java:129)
@@ -6183,20 +6180,29 @@ java.lang.StackOverflowError
 	at org.eclipse.cdt.internal.core.pdom.dom.cpp.PDOMCPPLinkage.addTypeBinding(PDOMCPPLinkage.java:1245)
 	at org.eclipse.cdt.internal.core.pdom.dom.TypeMarshalBuffer.marshalBinding(TypeMarshalBuffer.java:85)
 	at org.eclipse.cdt.internal.core.dom.parser.cpp.semantics.CPPDependentEvaluation.marshalTemplateDefinition(CPPDependentEvaluation.java:96)
-!SUBENTRY 1 org.eclipse.cdt.core 4 0 2017-11-23 02:00:35.031
-!MESSAGE Error while parsing /C:/OPRoS_2015/OPRoS_SLAM/MobileControllerComp/MobileControllerComp.cpp.
-!SUBENTRY 2 org.eclipse.cdt.core 4 0 2017-11-23 02:00:35.031
+	at org.eclipse.cdt.internal.core.dom.parser.cpp.semantics.EvalID.marshal(EvalID.java:190)
+	at org.eclipse.cdt.internal.core.dom.parser.Value.marshal(Value.java:185)
+!SUBENTRY 1 org.eclipse.cdt.core 4 0 2018-01-07 13:54:39.477
+!MESSAGE Error while parsing /C:/OPRoS_2015/OPRoS_SLAM/SLAMComp/GridBasedGlobalMap.cpp.
+!SUBENTRY 2 org.eclipse.cdt.core 4 0 2018-01-07 13:54:39.477
 !MESSAGE Error while parsing /C:/Program Files/Microsoft Visual Studio 14.0/VC/include/xtr1common.
 !STACK 0
 java.lang.StackOverflowError
-	at org.eclipse.core.runtime.PlatformObject.getAdapter(PlatformObject.java:68)
-	at org.eclipse.cdt.internal.core.pdom.dom.PDOMLinkage.attemptFastAdaptBinding(PDOMLinkage.java:206)
-	at org.eclipse.cdt.internal.core.pdom.dom.cpp.PDOMCPPLinkage.addBinding(PDOMCPPLinkage.java:407)
+	at org.eclipse.cdt.internal.core.pdom.db.Database.getChunk(Database.java:284)
+	at org.eclipse.cdt.internal.core.pdom.db.ShortString.getChars(ShortString.java:66)
+	at org.eclipse.cdt.internal.core.pdom.db.ShortString.compareCompatibleWithIgnoreCase(ShortString.java:178)
+	at org.eclipse.cdt.internal.core.pdom.dom.FindBinding$DefaultFindBindingVisitor.compare(FindBinding.java:80)
+	at org.eclipse.cdt.internal.core.pdom.db.BTree.accept(BTree.java:561)
+	at org.eclipse.cdt.internal.core.pdom.db.BTree.accept(BTree.java:531)
+	at org.eclipse.cdt.internal.core.pdom.dom.FindBinding.findBinding(FindBinding.java:173)
+	at org.eclipse.cdt.internal.core.pdom.dom.cpp.CPPFindBinding.findBinding(CPPFindBinding.java:129)
+	at org.eclipse.cdt.internal.core.pdom.dom.cpp.PDOMCPPLinkage.doAdaptBinding(PDOMCPPLinkage.java:898)
+	at org.eclipse.cdt.internal.core.pdom.dom.cpp.PDOMCPPLinkage.adaptBinding(PDOMCPPLinkage.java:854)
+	at org.eclipse.cdt.internal.core.pdom.dom.cpp.PDOMCPPLinkage.addBinding(PDOMCPPLinkage.java:419)
 	at org.eclipse.cdt.internal.core.pdom.dom.cpp.PDOMCPPLinkage.addTypeBinding(PDOMCPPLinkage.java:1245)
 	at org.eclipse.cdt.internal.core.pdom.dom.TypeMarshalBuffer.marshalBinding(TypeMarshalBuffer.java:85)
-	at org.eclipse.cdt.internal.core.dom.parser.cpp.CPPDeferredClassInstance.marshal(CPPDeferredClassInstance.java:232)
-	at org.eclipse.cdt.internal.core.pdom.dom.TypeMarshalBuffer.marshalBinding(TypeMarshalBuffer.java:81)
-	at org.eclipse.cdt.internal.core.dom.parser.cpp.semantics.EvalID.marshal(EvalID.java:183)
+	at org.eclipse.cdt.internal.core.dom.parser.cpp.semantics.CPPDependentEvaluation.marshalTemplateDefinition(CPPDependentEvaluation.java:96)
+	at org.eclipse.cdt.internal.core.dom.parser.cpp.semantics.EvalID.marshal(EvalID.java:190)
 	at org.eclipse.cdt.internal.core.dom.parser.Value.marshal(Value.java:185)
 	at org.eclipse.cdt.internal.core.pdom.dom.TypeMarshalBuffer.marshalValue(TypeMarshalBuffer.java:174)
 	at org.eclipse.cdt.internal.core.pdom.dom.PDOMLinkage.storeValue(PDOMLinkage.java:654)
@@ -7206,14 +7212,7 @@ java.lang.StackOverflowError
 	at org.eclipse.cdt.internal.core.dom.parser.cpp.semantics.CPPDependentEvaluation.marshalTemplateDefinition(CPPDependentEvaluation.java:96)
 	at org.eclipse.cdt.internal.core.dom.parser.cpp.semantics.EvalID.marshal(EvalID.java:190)
 	at org.eclipse.cdt.internal.core.dom.parser.Value.marshal(Value.java:185)
-	at org.eclipse.cdt.internal.core.pdom.dom.TypeMarshalBuffer.marshalValue(TypeMarshalBuffer.java:174)
-	at org.eclipse.cdt.internal.core.pdom.dom.PDOMLinkage.storeValue(PDOMLinkage.java:654)
-	at org.eclipse.cdt.internal.core.pdom.dom.PDOMLinkage.storeValue(PDOMLinkage.java:648)
-	at org.eclipse.cdt.internal.core.pdom.dom.cpp.PDOMCPPVariable.setValue(PDOMCPPVariable.java:54)
-	at org.eclipse.cdt.internal.core.pdom.dom.cpp.PDOMCPPVariable.<init>(PDOMCPPVariable.java:49)
-	at org.eclipse.cdt.internal.core.pdom.dom.cpp.PDOMCPPLinkage.createBinding(PDOMCPPLinkage.java:526)
-	at org.eclipse.cdt.internal.core.pdom.dom.cpp.PDOMCPPLinkage.addBinding(PDOMCPPLinkage.java:424)
-!SUBENTRY 2 org.eclipse.cdt.core 4 0 2017-11-23 02:00:35.034
+!SUBENTRY 2 org.eclipse.cdt.core 4 0 2018-01-07 13:54:39.479
 !MESSAGE Error while parsing /C:/Program Files/Microsoft Visual Studio 14.0/VC/include/xstddef.
 !STACK 0
 java.lang.StackOverflowError
@@ -7222,8 +7221,6 @@ java.lang.StackOverflowError
 	at org.eclipse.cdt.internal.core.pdom.db.ShortString.compareCompatibleWithIgnoreCase(ShortString.java:178)
 	at org.eclipse.cdt.internal.core.pdom.dom.FindBinding$DefaultFindBindingVisitor.compare(FindBinding.java:80)
 	at org.eclipse.cdt.internal.core.pdom.db.BTree.accept(BTree.java:561)
-	at org.eclipse.cdt.internal.core.pdom.db.BTree.accept(BTree.java:580)
-	at org.eclipse.cdt.internal.core.pdom.db.BTree.accept(BTree.java:580)
 	at org.eclipse.cdt.internal.core.pdom.db.BTree.accept(BTree.java:531)
 	at org.eclipse.cdt.internal.core.pdom.dom.FindBinding.findBinding(FindBinding.java:173)
 	at org.eclipse.cdt.internal.core.pdom.dom.cpp.CPPFindBinding.findBinding(CPPFindBinding.java:129)
@@ -8241,7 +8238,9 @@ java.lang.StackOverflowError
 	at org.eclipse.cdt.internal.core.pdom.dom.cpp.PDOMCPPLinkage.addTypeBinding(PDOMCPPLinkage.java:1245)
 	at org.eclipse.cdt.internal.core.pdom.dom.TypeMarshalBuffer.marshalBinding(TypeMarshalBuffer.java:85)
 	at org.eclipse.cdt.internal.core.dom.parser.cpp.semantics.CPPDependentEvaluation.marshalTemplateDefinition(CPPDependentEvaluation.java:96)
-!SUBENTRY 2 org.eclipse.cdt.core 4 0 2017-11-23 02:00:35.036
+	at org.eclipse.cdt.internal.core.dom.parser.cpp.semantics.EvalID.marshal(EvalID.java:190)
+	at org.eclipse.cdt.internal.core.dom.parser.Value.marshal(Value.java:185)
+!SUBENTRY 2 org.eclipse.cdt.core 4 0 2018-01-07 13:54:39.482
 !MESSAGE Error while parsing /C:/Program Files/Microsoft Visual Studio 14.0/VC/include/type_traits.
 !STACK 0
 java.lang.StackOverflowError
@@ -8250,8 +8249,6 @@ java.lang.StackOverflowError
 	at org.eclipse.cdt.internal.core.pdom.db.ShortString.compareCompatibleWithIgnoreCase(ShortString.java:178)
 	at org.eclipse.cdt.internal.core.pdom.dom.FindBinding$DefaultFindBindingVisitor.compare(FindBinding.java:80)
 	at org.eclipse.cdt.internal.core.pdom.db.BTree.accept(BTree.java:561)
-	at org.eclipse.cdt.internal.core.pdom.db.BTree.accept(BTree.java:580)
-	at org.eclipse.cdt.internal.core.pdom.db.BTree.accept(BTree.java:580)
 	at org.eclipse.cdt.internal.core.pdom.db.BTree.accept(BTree.java:531)
 	at org.eclipse.cdt.internal.core.pdom.dom.FindBinding.findBinding(FindBinding.java:173)
 	at org.eclipse.cdt.internal.core.pdom.dom.cpp.CPPFindBinding.findBinding(CPPFindBinding.java:129)
@@ -9269,7 +9266,9 @@ java.lang.StackOverflowError
 	at org.eclipse.cdt.internal.core.pdom.dom.cpp.PDOMCPPLinkage.addTypeBinding(PDOMCPPLinkage.java:1245)
 	at org.eclipse.cdt.internal.core.pdom.dom.TypeMarshalBuffer.marshalBinding(TypeMarshalBuffer.java:85)
 	at org.eclipse.cdt.internal.core.dom.parser.cpp.semantics.CPPDependentEvaluation.marshalTemplateDefinition(CPPDependentEvaluation.java:96)
-!SUBENTRY 2 org.eclipse.cdt.core 4 0 2017-11-23 02:00:35.039
+	at org.eclipse.cdt.internal.core.dom.parser.cpp.semantics.EvalID.marshal(EvalID.java:190)
+	at org.eclipse.cdt.internal.core.dom.parser.Value.marshal(Value.java:185)
+!SUBENTRY 2 org.eclipse.cdt.core 4 0 2018-01-07 13:54:39.484
 !MESSAGE Error while parsing /C:/Program Files/Microsoft Visual Studio 14.0/VC/include/utility.
 !STACK 0
 java.lang.StackOverflowError
@@ -9278,8 +9277,6 @@ java.lang.StackOverflowError
 	at org.eclipse.cdt.internal.core.pdom.db.ShortString.compareCompatibleWithIgnoreCase(ShortString.java:178)
 	at org.eclipse.cdt.internal.core.pdom.dom.FindBinding$DefaultFindBindingVisitor.compare(FindBinding.java:80)
 	at org.eclipse.cdt.internal.core.pdom.db.BTree.accept(BTree.java:561)
-	at org.eclipse.cdt.internal.core.pdom.db.BTree.accept(BTree.java:580)
-	at org.eclipse.cdt.internal.core.pdom.db.BTree.accept(BTree.java:580)
 	at org.eclipse.cdt.internal.core.pdom.db.BTree.accept(BTree.java:531)
 	at org.eclipse.cdt.internal.core.pdom.dom.FindBinding.findBinding(FindBinding.java:173)
 	at org.eclipse.cdt.internal.core.pdom.dom.cpp.CPPFindBinding.findBinding(CPPFindBinding.java:129)
@@ -10297,19 +10294,16 @@ java.lang.StackOverflowError
 	at org.eclipse.cdt.internal.core.pdom.dom.cpp.PDOMCPPLinkage.addTypeBinding(PDOMCPPLinkage.java:1245)
 	at org.eclipse.cdt.internal.core.pdom.dom.TypeMarshalBuffer.marshalBinding(TypeMarshalBuffer.java:85)
 	at org.eclipse.cdt.internal.core.dom.parser.cpp.semantics.CPPDependentEvaluation.marshalTemplateDefinition(CPPDependentEvaluation.java:96)
-!SUBENTRY 2 org.eclipse.cdt.core 4 0 2017-11-23 02:00:35.041
+	at org.eclipse.cdt.internal.core.dom.parser.cpp.semantics.EvalID.marshal(EvalID.java:190)
+	at org.eclipse.cdt.internal.core.dom.parser.Value.marshal(Value.java:185)
+!SUBENTRY 2 org.eclipse.cdt.core 4 0 2018-01-07 13:54:39.486
 !MESSAGE Error while parsing /C:/Program Files/Microsoft Visual Studio 14.0/VC/include/xutility.
 !STACK 0
 java.lang.StackOverflowError
-	at org.eclipse.cdt.internal.core.pdom.db.Database.getChunk(Database.java:284)
-	at org.eclipse.cdt.internal.core.pdom.db.Database.getInt(Database.java:478)
-	at org.eclipse.cdt.internal.core.pdom.db.Database.getString(Database.java:579)
-	at org.eclipse.cdt.internal.core.pdom.dom.PDOMNamedNode.getDBName(PDOMNamedNode.java:72)
-	at org.eclipse.cdt.internal.core.pdom.dom.FindBinding$DefaultFindBindingVisitor.compare(FindBinding.java:79)
-	at org.eclipse.cdt.internal.core.pdom.db.BTree.accept(BTree.java:561)
-	at org.eclipse.cdt.internal.core.pdom.db.BTree.accept(BTree.java:531)
-	at org.eclipse.cdt.internal.core.pdom.dom.FindBinding.findBinding(FindBinding.java:173)
-	at org.eclipse.cdt.internal.core.pdom.dom.cpp.CPPFindBinding.findBinding(CPPFindBinding.java:129)
+	at java.lang.StringBuilder.toString(Unknown Source)
+	at org.eclipse.cdt.internal.core.index.IndexCPPSignatureUtil.getSignature(IndexCPPSignatureUtil.java:91)
+	at org.eclipse.cdt.internal.core.index.IndexCPPSignatureUtil.getSignatureHash(IndexCPPSignatureUtil.java:159)
+	at org.eclipse.cdt.internal.core.pdom.dom.cpp.CPPFindBinding.findBinding(CPPFindBinding.java:122)
 	at org.eclipse.cdt.internal.core.pdom.dom.cpp.PDOMCPPLinkage.doAdaptBinding(PDOMCPPLinkage.java:887)
 	at org.eclipse.cdt.internal.core.pdom.dom.cpp.PDOMCPPLinkage.adaptBinding(PDOMCPPLinkage.java:854)
 	at org.eclipse.cdt.internal.core.pdom.dom.cpp.PDOMCPPLinkage.addBinding(PDOMCPPLinkage.java:419)
@@ -11325,7 +11319,12 @@ java.lang.StackOverflowError
 	at org.eclipse.cdt.internal.core.pdom.dom.cpp.PDOMCPPLinkage.createBinding(PDOMCPPLinkage.java:526)
 	at org.eclipse.cdt.internal.core.pdom.dom.cpp.PDOMCPPLinkage.addBinding(PDOMCPPLinkage.java:424)
 	at org.eclipse.cdt.internal.core.pdom.dom.cpp.PDOMCPPLinkage.addTypeBinding(PDOMCPPLinkage.java:1245)
-!SUBENTRY 2 org.eclipse.cdt.core 4 0 2017-11-23 02:00:35.044
+	at org.eclipse.cdt.internal.core.pdom.dom.TypeMarshalBuffer.marshalBinding(TypeMarshalBuffer.java:85)
+	at org.eclipse.cdt.internal.core.dom.parser.cpp.semantics.CPPDependentEvaluation.marshalTemplateDefinition(CPPDependentEvaluation.java:96)
+	at org.eclipse.cdt.internal.core.dom.parser.cpp.semantics.EvalID.marshal(EvalID.java:190)
+	at org.eclipse.cdt.internal.core.dom.parser.Value.marshal(Value.java:185)
+	at org.eclipse.cdt.internal.core.pdom.dom.TypeMarshalBuffer.marshalValue(TypeMarshalBuffer.java:174)
+!SUBENTRY 2 org.eclipse.cdt.core 4 0 2018-01-07 13:54:39.488
 !MESSAGE Error while parsing /C:/Program Files/Microsoft Visual Studio 14.0/VC/include/system_error.
 !STACK 0
 java.lang.StackOverflowError
@@ -11334,8 +11333,6 @@ java.lang.StackOverflowError
 	at org.eclipse.cdt.internal.core.pdom.db.ShortString.compareCompatibleWithIgnoreCase(ShortString.java:178)
 	at org.eclipse.cdt.internal.core.pdom.dom.FindBinding$DefaultFindBindingVisitor.compare(FindBinding.java:80)
 	at org.eclipse.cdt.internal.core.pdom.db.BTree.accept(BTree.java:561)
-	at org.eclipse.cdt.internal.core.pdom.db.BTree.accept(BTree.java:580)
-	at org.eclipse.cdt.internal.core.pdom.db.BTree.accept(BTree.java:580)
 	at org.eclipse.cdt.internal.core.pdom.db.BTree.accept(BTree.java:531)
 	at org.eclipse.cdt.internal.core.pdom.dom.FindBinding.findBinding(FindBinding.java:173)
 	at org.eclipse.cdt.internal.core.pdom.dom.cpp.CPPFindBinding.findBinding(CPPFindBinding.java:129)
@@ -12353,3 +12350,5 @@ java.lang.StackOverflowError
 	at org.eclipse.cdt.internal.core.pdom.dom.cpp.PDOMCPPLinkage.addTypeBinding(PDOMCPPLinkage.java:1245)
 	at org.eclipse.cdt.internal.core.pdom.dom.TypeMarshalBuffer.marshalBinding(TypeMarshalBuffer.java:85)
 	at org.eclipse.cdt.internal.core.dom.parser.cpp.semantics.CPPDependentEvaluation.marshalTemplateDefinition(CPPDependentEvaluation.java:96)
+	at org.eclipse.cdt.internal.core.dom.parser.cpp.semantics.EvalID.marshal(EvalID.java:190)
+	at org.eclipse.cdt.internal.core.dom.parser.Value.marshal(Value.java:185)

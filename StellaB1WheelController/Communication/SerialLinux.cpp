@@ -137,6 +137,7 @@ int SerialLinux::ReadSerial(unsigned char *data, int size)
 
 int SerialLinux::SetParameter(unsigned long timeOut, unsigned long baudRate, char dataBits, char stopBits, char parity, char flowControl)
 {
+	printf("setparameter\n");
 	this->timeOut = timeOut;
 	this->baudRate = baudRate;
 	this->dataBits = dataBits;

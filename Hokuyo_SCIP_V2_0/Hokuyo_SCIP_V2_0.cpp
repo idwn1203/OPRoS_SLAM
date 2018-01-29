@@ -66,6 +66,7 @@ Hokuyo_SCIP_V2_0::~Hokuyo_SCIP_V2_0(void)
 
 int32_t Hokuyo_SCIP_V2_0::Initialize(OPRoS::Property parameter)
 {
+	printf("hoki Init\n");
 	if(InitializeUART(parameter) != API_SUCCESS) {
 		return API_ERROR;
 	}
@@ -117,6 +118,7 @@ int32_t Hokuyo_SCIP_V2_0::Disable(void)
 
 int32_t Hokuyo_SCIP_V2_0::SetProperty(OPRoS::Property parameter)
 {
+	printf("hokisetproperty\n");
 	if(parameter.FindName("X") == false)				return API_ERROR;
 	if(parameter.FindName("Y") == false)				return API_ERROR;
 	if(parameter.FindName("Z") == false)				return API_ERROR;
@@ -159,6 +161,7 @@ int32_t Hokuyo_SCIP_V2_0::SetProperty(OPRoS::Property parameter)
 
 int32_t Hokuyo_SCIP_V2_0::GetProperty(OPRoS::Property &parameter)
 {
+	printf("hoki getprop\n");
 	parameter = this->parameter;
 
 	return API_SUCCESS;
@@ -166,7 +169,8 @@ int32_t Hokuyo_SCIP_V2_0::GetProperty(OPRoS::Property &parameter)
 
 int32_t Hokuyo_SCIP_V2_0::GetSensorValue(std::vector<OPRoS::Float64Array> &laserScannerData)
 {
-	//std::cout<<"HOKUYO GETSENSORVALUE TEST01"<<std::endl;
+
+	std::cout<<"HOKUYO GETSENSORVALUE TEST01"<<std::endl;
 	uart->Lock();
 
 	if(Hokuyo_SCIPV2_0_GetLastData() < 0) {
@@ -197,6 +201,7 @@ int32_t Hokuyo_SCIP_V2_0::GetSensorValue(std::vector<OPRoS::Float64Array> &laser
 
 int Hokuyo_SCIP_V2_0::InitializeUART(OPRoS::Property parameter)
 {
+	printf("hoki Inituart\n");
 	OPRoS::Property uartParameter;
 
 	if(parameter.FindName("UartApiName") == false)	return API_ERROR;
@@ -384,6 +389,7 @@ int Hokuyo_SCIP_V2_0::Hokuyo_SCIPV2_0_CheckSum(unsigned char *data, int size)
 
 int Hokuyo_SCIP_V2_0::Hokuyo_SCIPV2_0_ParsingData(unsigned char *data, int size)
 {
+	printf("hoki parsingdata\n");
 //std::cout<<"HOKUYO PARSINGDATA TEST01: size="<<size<<std::endl;
 	int index = 0;
 	unsigned char buf[4096];
@@ -425,6 +431,7 @@ int Hokuyo_SCIP_V2_0::Hokuyo_SCIPV2_0_ParsingData(unsigned char *data, int size)
 
 int Hokuyo_SCIP_V2_0::Hokuyo_SCIPV2_0_ParsingTimeStamp(unsigned char *data)
 {
+	printf("hoki parsingtime\n");
 	int timeStamp;
 
 	timeStamp = ((*(data + 0) - 0x30) << 18);
@@ -489,6 +496,8 @@ int Hokuyo_SCIP_V2_0::Hokuyo_SCIPV2_0_Reset(void)
 
 int Hokuyo_SCIP_V2_0::Hokuyo_SCIPV2_0_SetBaudRate(int baudRate)
 {
+
+	printf("hoki setbaudrate\n");
 #ifndef DUMMY
 	unsigned char sendData[16] = {0, };
 	unsigned char recvData[32] = {0, };
@@ -574,6 +583,8 @@ int Hokuyo_SCIP_V2_0::Hokuyo_SCIPV2_0_Disable(void)
 
 int Hokuyo_SCIP_V2_0::Hokuyo_SCIPV2_0_MeasureAndGetData(void)
 {
+
+	printf("hoki measureandgetdata\n");
 #ifndef DUMMY
 	unsigned char sendData[32] = {0, };
 	unsigned char recvData[4096] = {0, };

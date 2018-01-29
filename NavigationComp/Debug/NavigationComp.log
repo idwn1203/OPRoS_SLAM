@@ -1,0 +1,12 @@
+﻿  NavigationComp.cpp
+c:\opros_2015\opros_slam\navigationcomp\navigationcomp.cpp(57): warning C4244: 'initializing': conversion from 'double' to 'int', possible loss of data
+c:\opros_2015\opros_slam\navigationcomp\navigationcomp.cpp(68): warning C4244: '=': conversion from 'double' to 'int', possible loss of data
+c:\opros_2015\opros_slam\navigationcomp\navigationcomp.cpp(79): warning C4244: 'initializing': conversion from 'double' to 'int', possible loss of data
+c:\opros_2015\opros_slam\navigationcomp\navigationcomp.cpp(80): warning C4244: 'initializing': conversion from 'double' to 'int', possible loss of data
+c:\opros_2015\opros_slam\navigationcomp\navigationcomp.cpp(85): warning C4244: 'initializing': conversion from 'double' to 'int', possible loss of data
+c:\opros_2015\opros_slam\navigationcomp\navigationcomp.cpp(710): warning C4244: 'initializing': conversion from 'double' to 'int', possible loss of data
+c:\opros_2015\opros_slam\navigationcomp\navigationcomp.cpp(711): warning C4244: 'initializing': conversion from 'double' to 'int', possible loss of data
+c:\opros_2015\opros_slam\navigationcomp\navigationcomp.cpp(778): warning C4244: '=': conversion from 'double' to 'guchar', possible loss of data
+c:\opros_2015\opros_slam\navigationcomp\navigationcomp.cpp(782): warning C4244: '=': conversion from 'double' to 'guchar', possible loss of data
+  NavigationComp.vcxproj -> C:\OPRoS_2015\OPRoS_SLAM\NavigationComp\Debug\NavigationComp.dll
+  NavigationComp.vcxproj -> C:\OPRoS_2015\OPRoS_SLAM\NavigationComp\Debug\NavigationComp.pdb (Full PDB)

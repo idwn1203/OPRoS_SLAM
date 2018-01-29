@@ -52,6 +52,7 @@ SerialCommunication::~SerialCommunication(void)
 
 int SerialCommunication::InitializeSerial(OPRoS::Property parameter)
 {
+	printf("serial initializeserial\n");
 	if(parameter.FindName("PortName") == false)	return API_ERROR;
 	string portName = parameter.GetValue("PortName");
 	if(parameter.FindName("TimeOut") == false)		return API_ERROR;
@@ -121,6 +122,7 @@ int SerialCommunication::DisableSerial(void)
 
 int SerialCommunication::SetParameterSerial(OPRoS::Property parameter)
 {
+	printf("serial setparameter\n");
 	if(parameter.FindName("TimeOut") == false)		return API_ERROR;
 	unsigned long timeOut = (unsigned long)atol(parameter.GetValue("TimeOut").c_str());
 	if(parameter.FindName("BaudRate") == false)	return API_ERROR;
@@ -152,6 +154,7 @@ int SerialCommunication::SetParameterSerial(OPRoS::Property parameter)
 
 int SerialCommunication::GetParameterSerial(OPRoS::Property &parameter)
 {
+	printf("serial getparameter\n");
 	parameter = this->parameter;
 
 	return API_SUCCESS;

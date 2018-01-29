@@ -70,6 +70,7 @@ MobileControllerComp::~MobileControllerComp() {
 }
 bool MobileControllerComp::IsBaseRunning()
 {
+	printf("mobile isbaserunning\n");
 	//user code here
 	bool isWheelRunning = false;
 
@@ -109,7 +110,7 @@ ReturnType MobileControllerComp::StopBase()
 }
 
 ReturnType MobileControllerComp::RotateBase(float64_t angle,float64_t velocity)
-{
+{printf("mobile rotatebasebase\n");
 	//user code here
 
 	OPRoS::MobileVelocityData tVel;
@@ -135,6 +136,7 @@ ReturnType MobileControllerComp::RotateBase(float64_t angle,float64_t velocity)
 
 ReturnType MobileControllerComp::MoveBase(float64_t distance,float64_t velocity)
 {
+	printf("mobile movebase\n");
 	//user code here
 
 	if(MobileControl == NULL) {
@@ -151,20 +153,19 @@ ReturnType MobileControllerComp::MoveBase(float64_t distance,float64_t velocity)
 
 OPRoS::MobilePositionData MobileControllerComp::GetPosition()
 {
+
+	printf("mobile getposition\n");
 	//user code here
 	OPRoS::MobilePositionData position;
 
 	if(MobileControl == NULL)
 	{
-		std::cout<<"test0013"<<std::endl;
         PrintMessage("ERROR : MobileControllerComp::GetPosition() -> The handle of API is not created.\n");
         lastError = OPROS_PRECONDITION_NOT_MET;
-
-    	std::cout<<"test0012"<<std::endl;
+//        std::cout << "MobileController set Position1 : " << Position.x << Position.y << Position.theta << std::endl;
     }
-	std::cout<<"test001"<<std::endl;
+	//std::cout << "MobileController set Position2 : " << Position.x << Position.y << Position.theta << std::endl;
 	ReturnType msg = (ReturnType)MobileControl->GetPosition(position);
-	std::cout<<"test002"<<std::endl;
 
 
 //	std::cout << "MobileController get Position : " << Position.x << Position.y << Position.theta << std::endl;
@@ -185,6 +186,7 @@ OPRoS::MobilePositionData MobileControllerComp::GetPosition()
 
 ReturnType MobileControllerComp::SetPosition(OPRoS::MobilePositionData position)
 {
+	printf("mobile setposition\n");
 	//user code here
 
 	if(MobileControl == NULL)
@@ -193,11 +195,8 @@ ReturnType MobileControllerComp::SetPosition(OPRoS::MobilePositionData position)
         lastError = OPROS_PRECONDITION_NOT_MET;
     }
 
-	std::cout<<"test00131"<<std::endl;
 	ReturnType msg = (ReturnType)MobileControl->SetPosition(position);
-
-	std::cout<<"test201"<<std::endl;
-//	std::cout << "MobileController set Position : " << Position.x << Position.y << Position.theta << std::endl;
+                         //	std::cout << "MobileController set Position : " << Position.x << Position.y << Position.theta << std::endl;
 
 	if(msg == API_ERROR)
 	{
@@ -212,6 +211,7 @@ ReturnType MobileControllerComp::SetPosition(OPRoS::MobilePositionData position)
 
 ReturnType MobileControllerComp::SetVelocity(OPRoS::MobileVelocityData velocity)
 {
+	printf("mobile setvelocityposition\n");
 	//user code here
 	if(MobileControl == NULL)
 	{
@@ -232,6 +232,8 @@ ReturnType MobileControllerComp::SetVelocity(OPRoS::MobileVelocityData velocity)
 
 std::vector<OPRoS::Int32> MobileControllerComp::GetOdometry()
 {
+
+	printf("mobile getodometry\n");
 	//user code here
 	std::vector<OPRoS::Int32> odometry;
 
@@ -302,6 +304,8 @@ ReturnType MobileControllerComp::GetError()
 
 OPRoS::Property MobileControllerComp::GetProperty()
 {
+
+	printf("mobile getproperty\n");
 	//user code here
 	if(MobileControl == NULL)
 	{
@@ -324,6 +328,7 @@ OPRoS::Property MobileControllerComp::GetProperty()
 
 ReturnType MobileControllerComp::SetProperty(OPRoS::Property parameter)
 {
+	printf("mobile setpropery\n");
 	//user code here
 
 	if(MobileControl == NULL)
@@ -365,6 +370,7 @@ void MobileControllerComp::portSetup() {
 // Call back Declaration
 ReturnType MobileControllerComp::onInitialize()
 {
+	printf("mobile oninit\n");
 	// user code here
 	OPRoS::Property parameter;
 	std::map<std::string, std::string> temp = getPropertyMap();
@@ -417,6 +423,8 @@ ReturnType MobileControllerComp::onInitialize()
 
 ReturnType MobileControllerComp::onStart()
 {
+
+	printf("mobile onstart\n");
 	// user code here
 	MobileControl->Enable();
 
@@ -465,7 +473,8 @@ ReturnType MobileControllerComp::onEvent(Event *evt)
 ReturnType MobileControllerComp::onExecute()
 {
 	// user code here
-	
+
+	printf("mobile onexecutn\n");
 	OPRoS::MobileVelocityData tVel;
 	opros_any *pData = velocity.pop();
 	if (pData != NULL)

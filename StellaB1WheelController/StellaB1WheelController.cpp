@@ -983,6 +983,8 @@ StellaB1WheelController::~StellaB1WheelController()
 
 int32_t StellaB1WheelController::Initialize(OPRoS::Property parameter)	
 {
+
+	printf("stella initialize\n");
     status = DEVICE_CREATED; 
 	std::cout<<"status" << status <<std::endl;
 
@@ -1189,6 +1191,7 @@ int32_t StellaB1WheelController::Disable()
 
 int32_t StellaB1WheelController::SetProperty(OPRoS::Property parameter )
 {
+	printf("stella setpropetry\n");
 	if (status == DEVICE_CREATED)
 	{
 		PrintMessage("Precondition not met");
@@ -1230,6 +1233,7 @@ int32_t StellaB1WheelController::SetProperty(OPRoS::Property parameter )
 
 int32_t StellaB1WheelController::GetProperty(OPRoS::Property &parameter )
 {
+	printf("stella getproperty\n");
 	if (status == DEVICE_CREATED)
 	{
 		PrintMessage("Precondition not met");
@@ -1352,6 +1356,8 @@ int StellaB2WheelController::OnExecute()
 */
 bool StellaB1WheelController::ProcessOdometricLocalization()
 {
+
+	printf("stella processodometry\n");
 	WheelSpeed wheelSpeed;
 
 	StellaB1::ErrorCode errorCode;
@@ -1469,6 +1475,8 @@ int32_t StellaB1WheelController::GetPosition(OPRoS::MobilePositionData& position
 
 int32_t StellaB1WheelController::GetOdometry(std::vector<OPRoS::Int32> &odometery)
 {
+
+	printf("stella getodometry\n");
 	m_rwLockStatus.ReaderLock();
 	if (status != DEVICE_ACTIVE)
 	{
@@ -1504,6 +1512,8 @@ int32_t StellaB1WheelController::MoveBase( float64_t distance, float64_t linearV
 //ReturnType StellaB1WheelController::MoveBase(float64_t distance, float64_t linearVelocity)
 //int StellaB2WheelController::MoveWheel( double distance, double linearVelocity )
 {
+
+	printf("stella movebase\n");
 	m_rwLockStatus.ReaderLock();
 	if (status != DEVICE_ACTIVE)
 	{

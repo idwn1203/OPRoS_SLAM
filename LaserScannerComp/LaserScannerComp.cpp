@@ -1,5 +1,8 @@
 /*************************************************************
 
+
+
+
  file: LaserScannerComp.cpp
  author: E.C. Shin
 begin: January 31 2011
@@ -265,6 +268,7 @@ ReturnType LaserScannerComp::onInitialize()
 
 ReturnType LaserScannerComp::onStart()
 {
+	printf("LaserOnstart");
 
 	if(laserScanner == NULL) {
 		PrintMessage("ERROR : LaserScannerComp::onStart() -> The handle of API is not created.\n");
@@ -338,6 +342,8 @@ ReturnType LaserScannerComp::onEvent(Event *evt)
 ReturnType LaserScannerComp::onExecute()
 {
 	std::vector<OPRoS::Float64Array> sensorValue;
+
+	printf("LaserOnExecute");
 
 	if(laserScanner == NULL) {
 		PrintMessage("ERROR : LaserScannerComp::onExecute() -> The handle of API is not created.\n");

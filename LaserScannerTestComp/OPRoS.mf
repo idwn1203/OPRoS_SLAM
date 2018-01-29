@@ -1,7 +1,0 @@
-Manifest-Version:1.0
-Archive-type:OPRoS_Component
-Archive-name:LaserScannerTestComp.tar
-Archive-description:
-Archive-Element:LaserScannerTestComp.xml
-Shared-library:lib/
-

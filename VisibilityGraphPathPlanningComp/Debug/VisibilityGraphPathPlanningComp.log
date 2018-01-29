@@ -1,0 +1,11 @@
+﻿  VisibilityGraphPathPlanningComp.cpp
+c:\opros_2015\opros_slam\visibilitygraphpathplanningcomp\visibilitygraphpathplanningcomp.cpp(73): warning C4244: '=': conversion from 'double' to 'int', possible loss of data
+c:\opros_2015\opros_slam\visibilitygraphpathplanningcomp\visibilitygraphpathplanningcomp.cpp(74): warning C4244: '=': conversion from 'double' to 'int', possible loss of data
+c:\opros_2015\opros_slam\visibilitygraphpathplanningcomp\visibilitygraphpathplanningcomp.cpp(75): warning C4244: '=': conversion from 'double' to 'int', possible loss of data
+c:\opros_2015\opros_slam\visibilitygraphpathplanningcomp\visibilitygraphpathplanningcomp.cpp(76): warning C4244: '=': conversion from 'double' to 'int', possible loss of data
+c:\opros_2015\opros_slam\visibilitygraphpathplanningcomp\visibilitygraphpathplanningcomp.cpp(118): warning C4244: '=': conversion from 'double' to 'int', possible loss of data
+c:\opros_2015\opros_slam\visibilitygraphpathplanningcomp\visibilitygraphpathplanningcomp.cpp(119): warning C4244: '=': conversion from 'double' to 'int', possible loss of data
+c:\opros_2015\opros_slam\visibilitygraphpathplanningcomp\visibilitygraphpathplanningcomp.cpp(347): warning C4244: 'initializing': conversion from 'double' to 'int', possible loss of data
+c:\opros_2015\opros_slam\visibilitygraphpathplanningcomp\visibilitygraphpathplanningcomp.cpp(382): warning C4244: 'initializing': conversion from 'double' to 'int', possible loss of data
+  VisibilityGraphPathPlanningComp.vcxproj -> C:\OPRoS_2015\OPRoS_SLAM\VisibilityGraphPathPlanningComp\Debug\VisibilityGraphPathPlanningComp.dll
+  VisibilityGraphPathPlanningComp.vcxproj -> C:\OPRoS_2015\OPRoS_SLAM\VisibilityGraphPathPlanningComp\Debug\VisibilityGraphPathPlanningComp.pdb (Full PDB)
